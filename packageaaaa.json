@@ -1,0 +1,29 @@
+{
+  "name": "sabza-admin",
+  "version": "1.0.0",
+  "description": "Sabza Admin Frontend",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theSabza/sabza-admin.git"
+  },
+  "author": "Hamza A. Dastagir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theSabza/sabza-admin/issues"
+  },
+  "homepage": "https://github.com/theSabza/sabza-admin#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
