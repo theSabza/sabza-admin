@@ -7,14 +7,7 @@ CONTAINER_NAME=$2
 DOCKER_LOGIN=$3
 DOCKER_PWD=$4
 
-echo "The container name"
-echo $CONTAINER_NAME
-echo "the docker image name"
-echo $DOCKER_IMAGE
-echo "the docker login"
-echo $DOCKER_LOGIN
-echo "the docker pwd"
-echo $DOCKER_PWD
+
 # Check for arguments
 if [[ $# -lt 4 ]] ; then
         echo '[ERROR] You must supply a Docker image, container, login and password'
@@ -39,5 +32,5 @@ echo "Loging into Docker to run containers on our server"
 echo $DOCKER_PWD | sudo docker login -u $DOCKER_LOGIN --password-stdin
 
 sudo docker run -d --rm=true -p 3100:3100  --name $CONTAINER_NAME $DOCKER_IMAGE
- 
+
 sudo docker ps -a
