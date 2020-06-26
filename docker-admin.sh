@@ -39,5 +39,5 @@ echo "Loging into Docker to run containers on our server"
 echo $DOCKER_PWD | sudo docker login -u $DOCKER_LOGIN --password-stdin
 
 sudo docker run -d --rm=true -p 3100:3100  --name $CONTAINER_NAME $DOCKER_IMAGE
-
+ 
 sudo docker ps -a
